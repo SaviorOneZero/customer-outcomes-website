@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://savioronezero.github.io/customer-outcomes-website/sitemap.xml
