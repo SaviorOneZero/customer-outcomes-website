@@ -10,6 +10,13 @@ Initial public site for PromiseArc, a product from Outcome Labs. The site is sta
 - `privacy.html`, `terms.html` — clearly marked interim legal placeholders
 - `404.html`, `robots.txt`, `sitemap.xml`, `.nojekyll` — static hosting infrastructure
 - `assets/` — icons and social sharing image
+- `docs/website-execution-guide.md` — standing execution rules for agents changing the marketing site
+
+## Execution guide
+
+Before making substantive website changes, read [`docs/website-execution-guide.md`](docs/website-execution-guide.md).
+
+GitHub Issues remain the source of truth for **what** to change. The execution guide defines **how** work should be selected, implemented, validated, and handed off while preserving the current PromiseArc strategy, public-claims discipline, static architecture, responsive behavior, and accessibility expectations.
 
 ## Run locally
 
@@ -25,11 +32,11 @@ In repository **Settings → Pages**, choose **Deploy from a branch**, select `m
 
 If a custom domain is introduced, update the canonical and social URLs in `index.html`, plus `robots.txt` and `sitemap.xml`.
 
-## Before public launch
+## Public-site follow-ups
 
-- Confirm `hello@promisearc.com` is the correct contact address.
-- Replace Privacy and Terms placeholders with counsel-approved policies.
-- Replace the intentional capability view with approved product screenshots when available.
-- Confirm the production domain and update canonical metadata.
+- Confirm `hello@promisearc.com` remains the correct contact address.
+- Replace Privacy and Terms interim language with counsel-approved policies when available.
+- Replace the intentional capability view with approved product screenshots when the canonical demo portfolio is ready.
+- Keep canonical and social metadata aligned with the production domain and current GTM positioning.
 
 No analytics, tracking pixels, cookies, or third-party dependencies are included.
