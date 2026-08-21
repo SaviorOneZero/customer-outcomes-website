@@ -18,14 +18,34 @@ Do not duplicate full issue requirements here. Read the relevant issue and its l
 
 For website work, use this order of authority:
 
-1. **The active GitHub issue and its latest comments** for the specific requested change.
-2. **Current live repository content** for what is already implemented.
-3. **Current PromiseArc methodology and market/GTM direction** from the product repository when the issue depends on positioning, terminology, ICP, or product meaning.
+1. **The active GitHub issue and its latest comments** for the requested change.
+2. **Current repository content** for what is already implemented.
+3. **Current PromiseArc business/product sources** from `SaviorOneZero/customer-outcomes-platform` when the issue depends on positioning, terminology, ICP, product meaning, or implementation approach:
+   - `docs/promise-arc-methodology.md`
+   - `docs/market-strategy-and-validation.md`
+   - `docs/outcome-assessment-playbook.md`
+   - `docs/demo-and-discovery-guide.md`
 4. **Existing PromiseArc website design language** for visual implementation consistency.
 
 Do not invent new product strategy while implementing a bounded website issue.
 
-If issue copy, current site copy, and current strategy conflict, do not silently choose one. Resolve the conflict from the latest authoritative source or document the discrepancy before proceeding.
+If issue copy, current site copy, and current strategy conflict, resolve the conflict from the latest authoritative source or document the discrepancy before proceeding.
+
+### Public/private boundary
+
+The confidential founder/company strategic-optionality and acquisition material in the product repository is **not a public messaging source**.
+
+Never expose or allude to:
+
+- founder retirement or personal financial goals;
+- acquisition or exit strategy;
+- named or implied potential acquirers;
+- build-versus-buy strategy;
+- acquisition-readiness scorecards;
+- confidential strategic-optionality language;
+- any other internal-only company planning that is not explicitly approved for public use.
+
+The public PromiseArc story remains customer-first and outcome-first.
 
 ---
 
@@ -41,13 +61,9 @@ Unless a newer issue or explicit instruction changes this sequence, the current 
 
 Do not spend time perfecting a section that a higher-priority issue is about to substantially reposition, remove, or restructure.
 
-### Work-in-progress rule
+Prefer **one active substantive issue per agent at a time**. Combine issues only when they are genuinely coupled and shared implementation reduces duplicated effort without making validation ambiguous.
 
-Prefer **one active implementation issue per agent at a time**.
-
-Combine issues only when they are genuinely coupled and the shared implementation reduces duplicated effort without making validation ambiguous.
-
-Do not start a second substantive issue merely because a first one is nearly complete. Finish, verify, commit, deploy, and hand off cleanly.
+When the assigned issue is complete, verified, committed, and handed off, **stop unless explicitly asked to continue**. Do not open a new substantive workstream merely because some execution capacity remains.
 
 ---
 
@@ -65,15 +81,25 @@ The website is intentionally simple:
 
 Preserve that simplicity unless a concrete issue explicitly requires a change.
 
-Do not introduce React, Vue, Next.js, a CSS framework, a bundler, a component framework, an analytics package, a CMS, or another dependency merely because it is familiar or convenient.
+Do not introduce React, Vue, Next.js, a CSS framework, a bundler, a component framework, analytics, a CMS, or another dependency merely because it is familiar or convenient.
 
-For the current site, a small clear HTML/CSS/JS change is usually preferable to a new abstraction.
+For this site, a small clear HTML/CSS/JS change is usually preferable to a new abstraction.
+
+### Scope discipline
+
+When an issue is primarily messaging/copy work, preserve the existing visual composition unless the issue explicitly requests layout changes.
+
+When an issue is primarily layout/density work, preserve the approved messaging unless the issue explicitly requests copy changes.
+
+When an issue is visual polish, do not silently turn it into a broader redesign.
+
+This separation prevents agents from consuming time solving adjacent backlog items out of sequence.
 
 ---
 
 ## 4. Public messaging rules
 
-The website is a public commercial asset. Copy must be accurate, supportable, and consistent with the current PromiseArc strategy.
+The website is a public commercial asset. Copy must be accurate, supportable, and consistent with current PromiseArc strategy.
 
 ### Preserve strong core language where it still fits
 
@@ -93,11 +119,11 @@ PromiseArc should be presented as an evidence-backed customer-outcome operating 
 
 The public story should make clear that:
 
-- CRM records the commercial relationship;
+- CRM records commercial context;
 - delivery / services systems record implementation work;
 - product systems show usage and adoption;
 - support systems show friction and incidents;
-- Customer Success platforms may manage health, engagement, workflow, and Outcomes;
+- Customer Success platforms may manage engagement, workflow, health, and Outcomes;
 - those facts and activities do not automatically prove that the customer achieved the business Outcome they purchased;
 - PromiseArc keeps the customer Promise, Outcome, Value Path, Evidence, Risks, Actions, cadence, and realized-value conclusion connected.
 
@@ -111,6 +137,12 @@ Preserve this idea wherever relevant:
 
 Do not collapse Delivery, Adoption, and Value into one generic progress or health concept for marketing convenience.
 
+### CTA principle
+
+The primary CTA should normally invite a conversation about the **customer-outcome operating problem**, not present PromiseArc as a generic software demo with no methodology context.
+
+Keep CTA choices simple. Do not create multiple competing conversion paths unless an issue explicitly requires them.
+
 ---
 
 ## 5. Claims discipline
@@ -119,24 +151,12 @@ Never invent or imply proof that does not exist.
 
 Do not fabricate:
 
-- customers;
-- logos;
-- testimonials;
-- quotes;
-- case studies;
-- adoption numbers;
-- retention improvement;
-- ROI claims;
-- analyst recognition;
-- market share;
-- funding;
-- partnerships;
-- available integrations;
-- AI capabilities;
-- certifications;
-- security claims;
-- customer outcomes;
-- benchmark data.
+- customers, logos, testimonials, quotes, or case studies;
+- adoption, retention, NRR, churn, ROI, or other outcome claims;
+- analyst recognition, market share, funding, or partnerships;
+- available integrations or AI capabilities;
+- certifications, compliance, or security claims;
+- benchmark data or customer results.
 
 If a capability is planned rather than available, say so clearly or leave it out.
 
@@ -155,7 +175,7 @@ Use category contrast, not unsupported competitor attacks.
 - PromiseArc works alongside CRM, Customer Success, Support, Services, delivery, and product systems.
 - Activity and adoption do not by themselves prove business value.
 - Risk and customer attention should be explainable and evidence-backed.
-- PromiseArc preserves the original customer Promise and keeps the evidence and accountable actions connected to the Outcome.
+- PromiseArc preserves the original customer Promise and keeps Evidence and accountable Actions connected to the Outcome.
 
 ### Do not say
 
@@ -204,7 +224,7 @@ Where the website explains how organizations start, keep the Outcome Assessment 
 A useful public sequence is:
 
 1. Understand how promise, handoff, value, and renewal work today.
-2. Identify where Outcomes, evidence, ownership, or accountability are lost.
+2. Identify where Outcomes, Evidence, ownership, or accountability are lost.
 3. Define the Outcome Framework.
 4. Test the model with representative accounts.
 5. Configure PromiseArc around the approved model.
@@ -235,31 +255,17 @@ Preserve the current visual DNA:
 
 Do not introduce a website-only visual language simply because a new component could look interesting.
 
-### Before adding a new treatment, ask
+Before adding a new treatment, ask:
 
-> Does this look like it belongs beside the PromiseArc application?
+> **Does this look like it belongs beside the PromiseArc application?**
 
-If not, simplify or adapt it.
-
-### Avoid
-
-- decorative gradients without a strong reason;
-- excessive animation;
-- generic startup illustration styles;
-- stock photography merely to fill space;
-- mismatched icon libraries;
-- oversized visual effects that compete with the message;
-- novelty UI that adds interaction cost without increasing comprehension.
+Avoid decorative effects, generic startup illustrations, stock photography, mismatched icon libraries, excessive animation, or novelty interaction that does not materially improve comprehension.
 
 ---
 
 ## 10. Responsive and accessibility standard
 
-Every website change must be considered on:
-
-- desktop;
-- tablet;
-- phone.
+Every website change must be considered on desktop, tablet, and phone.
 
 At minimum verify:
 
@@ -274,7 +280,7 @@ At minimum verify:
 - color is not the only communication mechanism;
 - contrast remains adequate;
 - reduced-motion behavior remains respected where motion exists;
-- long text and short text states both look intentional.
+- long and sparse content states both look intentional.
 
 Do not solve mobile density problems merely by shrinking type or touch targets.
 
@@ -284,20 +290,11 @@ Do not solve mobile density problems merely by shrinking type or touch targets.
 
 When real product screenshots are introduced, treat them as evidence rather than decoration.
 
-Use only approved fictional demo data.
+Use only approved fictional canonical demo data. Prefer the canonical demo portfolio from the product repository once it is ready.
 
-Never expose:
+Never expose real customers, real contacts, real email addresses, confidential values, internal notes, credentials, admin secrets, or unfinished internal controls.
 
-- real customers;
-- real contacts;
-- real email addresses;
-- confidential ARR;
-- internal notes;
-- test credentials;
-- admin secrets;
-- unfinished internal controls.
-
-Prefer screenshots that prove the current GTM story, especially:
+Prefer screenshots that prove the GTM story, especially:
 
 - Portfolio / management view;
 - Customer workspace;
@@ -308,9 +305,9 @@ Prefer screenshots that prove the current GTM story, especially:
 - Executive / renewal proof;
 - adoption without value Evidence where the canonical demo supports it.
 
-Do not mock functionality into a screenshot that the product does not actually provide.
+Do not fake functionality into a screenshot that the product does not actually provide.
 
-Optimize images so the page remains fast and the important text remains readable at the final rendered size.
+Do not capture final marketing screenshots from unstable hand-edited data when a canonical demo-data issue is about to replace it.
 
 ---
 
@@ -322,14 +319,14 @@ Check as applicable:
 
 - `<title>`;
 - meta description;
-- Open Graph title/description/image;
-- Twitter/social metadata;
+- Open Graph title / description / image;
+- social metadata;
 - canonical URL;
 - `robots.txt`;
 - `sitemap.xml`;
 - favicon / social preview asset references.
 
-Do not update these mechanically for every tiny copy change. Update them when the public positioning or destination has materially changed.
+Do not update these mechanically for every tiny copy change. Update them when public positioning or destination has materially changed.
 
 ---
 
@@ -337,19 +334,9 @@ Do not update these mechanically for every tiny copy change. Update them when th
 
 Privacy and Terms content is not a place to improvise legal policy.
 
-Agents may:
+Agents may fix broken links, remove internal publishing notes from public pages, improve clearly non-legal presentation when instructed, and preserve accurate interim disclosures already approved for public use.
 
-- fix broken links;
-- remove internal publishing notes from public pages;
-- improve clearly non-legal presentation/copy when instructed;
-- preserve accurate interim disclosures already approved for public use.
-
-Agents must not:
-
-- invent legal commitments;
-- claim compliance not established elsewhere;
-- create contractual promises;
-- add tracking/privacy assertions that have not been verified.
+Agents must not invent legal commitments, claim compliance not established elsewhere, create contractual promises, or add tracking/privacy assertions that have not been verified.
 
 When legal substance is required, leave it for explicit legal review.
 
@@ -357,15 +344,16 @@ When legal substance is required, leave it for explicit legal review.
 
 ## 14. Implementation workflow
 
-Before editing:
+### Before editing
 
 1. Read the complete issue and latest comments.
-2. Inspect the current live source.
-3. Inspect nearby styles / scripts before creating a new pattern.
-4. Identify whether the requested change affects messaging, layout, responsive behavior, metadata, navigation, legal pages, or assets.
-5. Confirm no higher-priority issue is about to invalidate the work.
+2. Read this execution guide.
+3. Inspect the current source and nearby styles/scripts.
+4. Inspect the current rendered page before deciding what needs to change.
+5. Identify whether the requested change affects messaging, layout, responsive behavior, metadata, navigation, legal pages, or assets.
+6. Confirm no higher-priority issue is about to invalidate the work.
 
-During implementation:
+### During implementation
 
 1. Make the smallest coherent change that satisfies the issue.
 2. Reuse existing classes and patterns where sensible.
@@ -374,17 +362,19 @@ During implementation:
 5. Keep CSS changes localized where possible.
 6. Keep JavaScript progressive and minimal.
 7. Do not add a dependency for something the current stack can handle simply.
+8. Do not implement adjacent backlog issues unless the active issue explicitly requires them.
 
-Before delivery:
+### Before delivery
 
 1. Run the site locally.
 2. Review the changed section in context of the full homepage.
-3. Verify desktop, tablet, and phone layouts.
-4. Check navigation and interactive behavior.
-5. Check console/runtime for obvious errors where practical.
-6. Review the final diff for unrelated changes.
-7. Confirm public claims remain defensible.
-8. Confirm no internal-only information has leaked into visible copy, source comments, metadata, or assets.
+3. Read the full homepage top to bottom after messaging changes.
+4. Verify desktop, tablet, and phone layouts.
+5. Check navigation and interactive behavior.
+6. Check console/runtime for obvious errors where practical.
+7. Review the final diff for unrelated changes.
+8. Confirm public claims remain defensible.
+9. Confirm no internal-only information has leaked into visible copy, source comments, metadata, or assets.
 
 ---
 
@@ -396,7 +386,7 @@ Run locally with:
 python3 -m http.server 8000
 ```
 
-Then inspect the site through a browser at:
+Inspect the site through a browser at:
 
 ```text
 http://localhost:8000
@@ -409,15 +399,26 @@ For meaningful UI changes, inspect representative widths such as:
 - ~768px tablet;
 - ~390px phone.
 
-Exact widths may vary by issue, but do not validate only one desktop viewport.
+Do not validate only one desktop viewport.
 
 ---
 
-## 16. Delivery and evidence standard
+## 16. Branch, PR, deployment, and evidence standard
 
-A website issue should not be considered complete merely because files were edited.
+Respect repository branch protection. Do not bypass protected `main` rules for convenience.
 
-Where applicable, the final issue update should include:
+For normal implementation work:
+
+1. use a short-lived issue-scoped branch when required;
+2. commit a focused change with a concise message;
+3. open a PR against `main` when required by repository policy;
+4. verify available checks before merge;
+5. merge through the permitted repository workflow;
+6. verify the production/static-hosting deployment when the change affects the public site;
+7. smoke-check the live site after deployment where practical;
+8. update the relevant issue with concise delivery evidence.
+
+A delivery update should include, where applicable:
 
 - commit SHA or PR;
 - concise summary of what changed;
@@ -425,7 +426,7 @@ Where applicable, the final issue update should include:
 - responsive validation performed;
 - accessibility / interaction checks performed;
 - deployment result;
-- production URL verification;
+- production verification;
 - anything requiring manual product-owner acceptance.
 
 Do not write long status reports for trivial work. Provide enough evidence that the next person can tell what was delivered and what remains.
@@ -437,7 +438,7 @@ Do not write long status reports for trivial work. Provide enough evidence that 
 To conserve development capacity:
 
 - read before editing;
-- do not rediscover decisions already captured in issues;
+- use the issue and this guide rather than rediscovering decisions;
 - do not redesign working areas outside scope;
 - do not create speculative variants unless an issue asks for them;
 - do not repeatedly rewrite copy that already passed review;
