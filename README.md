@@ -40,3 +40,9 @@ If a custom domain is introduced, update the canonical and social URLs in `index
 - Keep canonical and social metadata aligned with the production domain and current GTM positioning.
 
 No analytics, tracking pixels, cookies, or third-party dependencies are included.
+
+## Ownership and licensing
+
+PromiseArc is marketed under the Outcome Labs brand. Copyright in the first-party website source, copy, visual design/expression, artwork, documentation, and brand assets remains with Andrew E. Reynolds until formally assigned.
+
+This repository is publicly readable but is not open source. Public access grants no permission to copy, modify, distribute, or reuse first-party materials. See [`LICENSE`](LICENSE) for the proprietary terms and third-party-rights notice.
